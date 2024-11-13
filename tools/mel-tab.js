@@ -450,6 +450,76 @@ function getNoteGlyph(note, style) {
             }
 
             break;
+            
+            case 2:
+            //DG4A
+
+            var glyph_map = {
+
+                // G row
+                  
+                "F,":  "1"+PUSH_NAME,
+                 "_E,":  "1"+DRAW_NAME,
+                "^D,":  "1"+DRAW_NAME,
+                "D,":  "2"+PUSH_NAME,  
+                "B,":  "2"+DRAW_NAME,
+                "D":   "3"+PUSH_NAME,
+                "^F":   "3"+DRAW_NAME,
+                "_G":   "3"+DRAW_NAME,
+                "G":   "4"+PUSH_NAME,
+                "A":   "4"+DRAW_NAME,
+                "B":   "5"+PUSH_NAME,
+                "C":   "5"+DRAW_NAME,
+                "d":   "6"+PUSH_NAME,
+                "E":   "6"+DRAW_NAME,
+                 "g":   "7"+PUSH_NAME,
+                "^f":   "7"+DRAW_NAME,
+                "_g":   "7"+DRAW_NAME,
+               "b":   "8"+PUSH_NAME,
+                "a":   "8"+DRAW_NAME,
+                  "d'":  "9"+PUSH_NAME,
+                "c":   "9"+DRAW_NAME,
+                 "g'":  "10"+PUSH_NAME,
+                "e":   "10"+DRAW_NAME,
+                
+                // D row
+                  "^G,": "①"+PUSH_NAME,
+                "_A,": "①"+PUSH_NAME,
+                 "_B,": "①"+DRAW_NAME,
+                "^A,": "①"+DRAW_NAME,
+                "^F,": "②"+PUSH_NAME,
+                "_G,": "②"+PUSH_NAME,
+                 "A,": "②"+DRAW_NAME,
+                  "A,":  "③"+PUSH_NAME,
+                  "^C":  "③"+DRAW_NAME,
+                "_D":  "③"+DRAW_NAME,
+                 "D":  "④"+PUSH_NAME,
+                  "^F":  "⑤"+PUSH_NAME,
+                "_G":  "⑤"+PUSH_NAME,
+                 "G":  "⑤"+DRAW_NAME,
+                  "B":  "⑥"+DRAW_NAME,
+                  "^c":  "⑦"+DRAW_NAME,
+                "_d":  "⑦"+DRAW_NAME,
+                 "d":  "⑦"+PUSH_NAME,
+                 "^f":  "⑧"+PUSH_NAME,
+                "_g":  "⑧"+PUSH_NAME,
+                "g":  "⑨"+DRAW_NAME,
+                 "d'": "⑩"+PUSH_NAME,
+                  "b":  "⑩"+DRAW_NAME,
+                  "^c'": "⑪"+DRAW_NAME,
+                "_d'": "⑪"+DRAW_NAME,
+                 "^f'": "⑪"+PUSH_NAME,
+                "_g'": "⑪"+PUSH_NAME
+              };
+
+            var thisGlyph = glyph_map[note];
+
+            if (!thisGlyph) {
+                return "x ";
+            }
+
+            break;
+            
 
 
     }
